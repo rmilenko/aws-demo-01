@@ -23,13 +23,13 @@ provider "aws" {
 # }
 
 module "ec2-instance-1" {
-  source = "./modules/aws-ec2"
+  source        = "./modules/aws-ec2"
   instance_name = "instance-01"
-  region = "eu-central-1"
+  region        = "eu-central-1"
 }
 
 module "ec2-instance-2" {
-  source = "./modules/aws-ec2"
+  source        = "./modules/aws-ec2"
   instance_name = "instance-02"
-  region = "eu-central-1"
+  region        = "eu-central-1"
 }
