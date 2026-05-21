@@ -19,6 +19,10 @@ spec:
         prometheusOperator:
           admissionWebhooks:
             enabled: false
+            patch:
+              enabled: false
+          tls:
+            enabled: false
         grafana:
           adminUser: admin
           admin:
