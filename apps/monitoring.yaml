@@ -13,6 +13,9 @@ spec:
     targetRevision: "65.1.1"
     helm:
       values: |
+        prometheusOperator:
+          admissionWebhooks:
+            enabled: false
         grafana:
           adminUser: admin
           admin:
