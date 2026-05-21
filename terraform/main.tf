@@ -58,3 +58,14 @@ output "data-aws-subnets-example" {
 # output "data-aws-subnet-example" {
 #   value = data.aws_subnet.example
 # }
+
+######################################
+
+variable "db-password" {
+  default = ""
+}
+module "rds-postgres18" {
+  source          = "./modules/aws-rds"
+  rds-subnet-ids = data.aws_subnets.example.ids
+  db-password = "Pr0m3n1m332"
+}
